@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Welcome to My Book List{% endblock %}
+
+{% block body %}
+    <h1>Welcome to the Book List App!</h1>
+    <p>This is the home page. You can navigate through the books.</p>
+    <a href="{{ path('book_index') }}" class="btn btn-primary">Go to Books</a>
+{% endblock %}

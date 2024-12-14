@@ -3,3 +3,9 @@ controllers:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
+book_add:
+    path: /book/add
+    controller: App\Controller\BookController::add
+book_edit:
+    path: /book/edit/{id}
+    controller: App\Controller\BookController::edit

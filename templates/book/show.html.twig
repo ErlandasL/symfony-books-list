@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Book Details{% endblock %}
+
+{% block body %}
+    <h1>Book Details</h1>
+
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">{{ book.title }}</h5>
+            <p><strong>Author:</strong> {{ book.author }}</p>
+            <p><strong>Publication Year:</strong> {{ book.publicationYear }}</p>
+            <p><strong>ISBN:</strong> {{ book.isbn }}</p>
+
+            <a href="{{ path('book_edit', { 'id': book.id }) }}" class="btn btn-warning">Edit</a>
+            <a href="{{ path('book_index') }}" class="btn btn-secondary">Back to List</a>
+        </div>
+    </div>
+{% endblock %}
